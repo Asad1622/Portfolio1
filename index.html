@@ -5,16 +5,211 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="./style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <style>
-
+   
   </style>
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="color:#2C3E50;">
+      <a class="navbar-brand" href="#"><img src="./Blue_Volunteer_Icon_Community___Non-Profit_Logo-removebg-preview.png" alt="LoveBirds Logo" style="width: 70px; height: auto;"> LoveBirds </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Enter Post Code" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <!-- Background div with blur effect -->
+    <div class="blur-background"></div>
+    
+    <div class="col-md-6 p-lg-5 mx-auto my-5 text-content">
+      <h1 class="display-3 fw-bold">Cookies for everyone</h1>
+      <h3 class="fw-normal text-muted mb-3">Crafted with Love, Served with Warmth</h3>
+      
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="#">
+          Menu
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+        <a class="icon-link" href="#">
+          Customise
+          
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+    </div>
+  
+    <!-- Floating cookies emojis -->
+    <div class="floating-cookies">
+      🍪🍪🍪🍪🍪🍪🍪🍪
+    </div>
+  </div>
+  
+  
+  
 
 
+  <div class="container">
+    <!-- Row 1 (Left) -->
+    <div class="row align-items-center my-md-3 ps-md-3">
+      <div class="col-md-6">
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Freshly Baked Delights Every Day</h2>
+            <p class="lead">Indulge in our daily selection of artisan breads and pastries, baked fresh with love.</p>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto image-container" style="border-radius: 21px;">
+            <img src="./pexels-taryn-elliott-6119147.jpg" class="img-fluid" alt="Headline Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Row 2 (Right) -->
+    <div class="row align-items-center my-md-3 ps-md-3">
+      <div class="col-md-6 offset-md-6">
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Sweet Treats for Every Occasion</h2>
+            <p class="lead"> Celebrate with our custom cakes and charming pastries, perfect for any special moment.</p>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto image-container" style="border-radius: 21px;">
+            <img src="./pexels-taryn-elliott-6119147.jpg" class="img-fluid" alt="Headline Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Row 3 (Left) -->
+    <div class="row align-items-center my-md-3 ps-md-3">
+      <div class="col-md-6">
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Artisan Breads Crafted with Passion</h2>
+            <p class="lead">Enjoy our handcrafted breads, made with the finest ingredients and a touch of artistry.</p>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto image-container" style="border-radius: 21px;">
+            <img src="./pexels-taryn-elliott-6119147.jpg" class="img-fluid" alt="Headline Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Row 4 (Right) -->
+    <div class="row align-items-center my-md-3 ps-md-3">
+      <div class="col-md-6 offset-md-6">
+        <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Indulge in Our Signature Pastries</h2>
+            <p class="lead"> Savor our delectable pastries, crafted to delight both the eyes and the taste buds.</p>
+          </div>
+          <div class="bg-dark shadow-sm mx-auto image-container" style="border-radius: 21px;">
+            <img src="./pexels-taryn-elliott-6119147.jpg" class="img-fluid" alt="Headline Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    
+  </div>
+
+
+
+
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis">Custom Cake Design</h3>
+      <p class="feature-text">Tailor-made cakes for any occasion, from weddings and birthdays to special events, designed to match your unique theme and preferences.</p>
+      <a href="#" class="icon-link">
+        Order Now
+        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis">Fresh Daily Bread and Pastries</h3>
+      <p class="feature-text">A daily selection of freshly baked bread and pastries, including artisan loaves, croissants, and Danish pastries, all made from scratch.</p>
+      <a href="#" class="icon-link">
+        Order Now
+        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis">Gourmet Catering</h3>
+      <p class="feature-text">High-quality catering services for events and gatherings, featuring an array of sweet and savory baked goods to impress your guests.
+
+      </p>
+      <a href="#" class="icon-link">
+        Order Now
+        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+  <footer class="py-3 my-4" style="background-color: #F4EAD7; color: #5A3C3C;">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3" style="border-bottom-color: #F4C6C6;">
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #5A3C3C;">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #5A3C3C;">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #5A3C3C;">Menu</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #5A3C3C;">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2" style="color: #5A3C3C;">About</a></li>
+    </ul>
+    <p class="text-center" style="color: #5A3C3C;">© 2024 LoveBirds Co.</p>
+  </footer>
+</div>
+
+  
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
