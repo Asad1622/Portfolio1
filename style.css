@@ -1,184 +1,179 @@
-body{
+/* General Body Styling */
+body {
     background: linear-gradient(to right, #F9E3D3, #F4A6A5);
-  
-    
-/* Container with light peach background and rounded corners */
-.bg-body-tertiary {
-background-color: #FBE9E7; /* Light Peach */
-border-radius: 15px; /* Modern rounded corners */
-overflow: hidden; /* Ensure content does not overflow */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
-padding: 20px; /* Add some padding */
-margin: 20px 0; /* Vertical margin */
-border: 1px solid #F4A6A5; /* Peachy Pink border */
-color: #6D4C4F; /* Dark Maroon text */
+    margin: 0;
+    padding: 0;
 }
 
-/* Container for the image with modern styling */
-.image-container {
-width: 80%;
-max-width: 800px; /* Set max width for larger screens */
-height: auto; /* Ensure aspect ratio is preserved */
-border-radius: 15px; /* Rounded corners */
-overflow: hidden; /* Ensure content stays within the borders */
-margin: 0 auto; /* Center the container */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-background-color: #FBE9E7; /* Light Peach */
-}
-
-/* Image styling */
-.img-fluid {
-width: 100%; /* Ensure the image fills the container */
-height: auto; /* Preserve aspect ratio */
-border-radius: 15px; /* Match rounded corners with container */
-}
-
-/* Optional: Hover effect for containers */
-.bg-body-tertiary:hover {
-background-color: #F4A6A5; /* Slightly darker peach on hover */
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
-}
-
-/* Optional: Hover effect for image containers */
-.image-container:hover {
-background-color: #F4A6A5; /* Slightly darker peach on hover */
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
-}
-
-
-/* Navbar Background */
+/* Navbar Styling */
 .navbar {
-background-color: #F9E3D3; /* Creamy Peach from the gradient */
-border-bottom: 2px solid #F4A6A5; /* Peachy Pink for a subtle border */
+    background-color: #F9E3D3; /* Creamy Peach */
+    border-bottom: 2px solid #F4A6A5; /* Peachy Pink border */
 }
 
-/* Navbar Brand and Links */
 .navbar .navbar-brand, .navbar .nav-link {
-color: #5A3C3C; /* Deep Brown for text to contrast nicely */
+    color: #5A3C3C; /* Deep Brown */
 }
 
-/* Navbar Brand and Links on Hover */
 .navbar .navbar-brand:hover, .navbar .nav-link:hover {
-color: #F4A6A5; /* Peachy Pink on hover to complement the background */
+    color: #F4A6A5; /* Peachy Pink on hover */
 }
 
-/* Toggler Button */
 .navbar-toggler {
-border-color: #F4A6A5; /* Match toggler border with the theme */
+    border-color: #F4A6A5; /* Match toggler border */
 }
 
-/* Search Button */
 .btn-outline-success {
-color: #F4A6A5; /* Peachy Pink for button text */
-border-color: #F4A6A5; /* Button border */
+    color: #F4A6A5; /* Peachy Pink for button text */
+    border-color: #F4A6A5; /* Button border */
 }
 
-/* Search Button Hover */
 .btn-outline-success:hover {
-background-color: #F4A6A5; /* Peachy Pink background on hover */
-color: #fff; /* White text for better visibility */
+    background-color: #F4A6A5; /* Peachy Pink background on hover */
+    color: #fff; /* White text */
 }
 
-
-
-/* Background div with blur effect */
-.blur-background {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: url('./path-to-your-background-image.jpg') no-repeat center center;
-background-size: cover;
-filter: blur(8px); /* Adjust the blur amount as needed */
-z-index: -1; /* Place behind the content */
+/* Header Section */
+.position-relative {
+    position: relative;
 }
 
-/* Container styling */
 .bg-body-tertiary {
-background-color: rgba(249, 227, 211, 0.8); /* Light Creamy Peach with some transparency */
-border-radius: 15px; /* Modern rounded corners */
-overflow: hidden; /* Ensure content does not overflow */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    background-color: rgba(249, 227, 211, 0.8); /* Light Creamy Peach with some transparency */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    color: #5A3C3C; /* Deep Brown text */
 }
 
-/* Text content styling */
 .text-content {
-color: #5A3C3C; /* Deep Brown for text */
+    color: #5A3C3C; /* Deep Brown text */
 }
 
-/* Icon link styling */
-.icon-link {
-color: #F4A6A5; /* Peachy Pink for links */
-text-decoration: none; /* Remove underline */
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./path-to-your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
 }
 
-.icon-link:hover {
-color: #2C3E50; /* Darker color on hover */
+.floating-cookies {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 2rem;
+    pointer-events: none; /* Prevent interaction */
 }
 
-/* Header and subheader styles */
-.display-3, .fw-bold {
-font-weight: bold;
+/* Image Container Styling */
+.image-container {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FBE9E7;
 }
 
-.fw-normal {
-font-weight: normal;
+.img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
-
-.text-muted {
-color: #6D4C4F; /* Dark Maroon for muted text */
-}
-
 
 /* Feature Section Styles */
 .row-cols-lg-3 .feature {
-    background-color: whitesmoke; /* Light Creamy Peach */
-    border-radius: 12px; /* Modern rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  .row-cols-lg-3 .feature:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-  }
-  
-  /* Feature Icon Styles */
-  .feature-icon {
-    background: white; /* Peachy Pink */
+}
+
+.row-cols-lg-3 .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    background: white;
     border-radius: 50%;
-    color: #fff; /* White icon color */
+    color: #fff;
     width: 60px;
     height: 60px;
     line-height: 60px;
     font-size: 1.5rem;
-  }
-  
-  /* Text and Link Styling */
-  .text-body-emphasis {
+}
+
+.text-body-emphasis {
     color: #5A3C3C; /* Deep Brown for titles */
-  }
-  
-  .feature-text {
+}
+
+.feature-text {
     color: #6D4C4F; /* Dark Maroon for text */
-  }
-  
-  .icon-link {
+}
+
+.icon-link {
     color: rgb(184, 108, 82); /* Peachy Pink for links */
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-  }
-  
-  .icon-link svg {
+}
+
+.icon-link svg {
     vertical-align: middle;
-  }
-  
-  .icon-link:hover {
+}
+
+.icon-link:hover {
     color: #2C3E50; /* Darker color on hover */
-  }
-  
+}
+
+/* Footer Styling */
+footer {
+    background-color: #F4EAD7; /* Light Peach */
+    color: #5A3C3C; /* Deep Brown */
+}
+
+footer .nav-item .nav-link {
+    color: #5A3C3C;
+}
+
+footer .nav-item .nav-link:hover {
+    color: #F4A6A5; /* Peachy Pink on hover */
+}
+
+footer .text-center {
+    color: #5A3C3C; /* Deep Brown */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .text-content {
+        font-size: 1rem;
+    }
+
+    .floating-cookies {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .floating-cookies {
+        font-size: 2rem;
+    }
+}
